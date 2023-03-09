@@ -6,6 +6,8 @@ import {
 } from '@angular/fire/auth-guard';
 
 import { NgModule } from '@angular/core';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { LoginPageComponent } from './features/auth/pages/login-page/login-page.component';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['']);
 const redirectLoggedInToHome = () => redirectLoggedInTo(['dashboard']);
@@ -13,16 +15,12 @@ const redirectLoggedInToHome = () => redirectLoggedInTo(['dashboard']);
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./features/auth/auth.module').then((m) => m.AuthModule),
+    component: LoginPageComponent,
     ...canActivate(redirectLoggedInToHome),
   },
   {
     path: 'dashboard',
-    loadChildren: () =>
-      import('./features/dashboard/dashboard.module').then(
-        (m) => m.DashboardModule
-      ),
+    component: DashboardComponent,
     ...canActivate(redirectUnauthorizedToLogin),
   },
   {

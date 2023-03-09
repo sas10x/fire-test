@@ -1,11 +1,22 @@
 export const environment = {
   firebase: {
-    projectId: 'ngbytes-fireauth',
-    appId: '1:103220365677:web:52f63c3fa2c6d7385db264',
-    storageBucket: 'ngbytes-fireauth.appspot.com',
-    apiKey: 'AIzaSyB1Fdq_7bi8rInXn5iK43rBGhQcXCocENU',
-    authDomain: 'ngbytes-fireauth.firebaseapp.com',
-    messagingSenderId: '103220365677',
+    projectId: 'instagram-demo-39f2b',
+    appId: '1:29314051858:web:cf96e62410233961e94dcb',
+    storageBucket: 'instagram-demo-39f2b.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyBeoPUhWgv3jxTaPjj3TueHx1feViVq0Sw',
+    authDomain: 'instagram-demo-39f2b.firebaseapp.com',
+    messagingSenderId: '29314051858',
+    measurementId: 'G-E1D2E3FT3Z',
+  },
+  firebase2 : {
+    apiKey: "AIzaSyCV_1TOrkKSRElbhaeBStBBigyzRowG93M",
+    authDomain: "theological-academy-dev.firebaseapp.com",
+    projectId: "theological-academy-dev",
+    storageBucket: "theological-academy-dev.appspot.com",
+    messagingSenderId: "390201673171",
+    appId: "1:390201673171:web:5bf7960395f6813d3b9b26",
+    measurementId: "G-KX4PHGDRVT"
   },
   production: true
 };

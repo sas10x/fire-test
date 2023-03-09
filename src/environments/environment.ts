@@ -4,12 +4,24 @@
 
 export const environment = {
   firebase: {
-    projectId: 'ngbytes-fireauth',
-    appId: '1:103220365677:web:52f63c3fa2c6d7385db264',
-    storageBucket: 'ngbytes-fireauth.appspot.com',
-    apiKey: 'AIzaSyB1Fdq_7bi8rInXn5iK43rBGhQcXCocENU',
-    authDomain: 'ngbytes-fireauth.firebaseapp.com',
-    messagingSenderId: '103220365677',
+    projectId: 'ng-recipe-book-ada40',
+    appId: '1:294474220587:web:12d26f32eaa5599da7d66e',
+    databaseURL: 'https://ng-recipe-book-ada40.firebaseio.com',
+    storageBucket: 'ng-recipe-book-ada40.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyDo4_5joqjr2RgK_PPYNbOPlSHjQTyeAHM',
+    authDomain: 'ng-recipe-book-ada40.firebaseapp.com',
+    messagingSenderId: '294474220587',
+  },
+  
+  firebaseGK: {
+    apiKey: "AIzaSyAZWn5egmezCl6J194MdAty9J9RSgq2uzw",
+    authDomain: "guardian-kids-game.firebaseapp.com",
+    projectId: "guardian-kids-game",
+    storageBucket: "guardian-kids-game.appspot.com",
+    messagingSenderId: "457869217896",
+    appId: "1:457869217896:web:5e0828c3655d376d882bdd",
+    measurementId: "G-ZSJ9HYK0HV"
   },
   production: false
 };

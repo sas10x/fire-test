@@ -17,11 +17,11 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  login(loginData: LoginData) {
-    this.authService
-      .login(loginData)
-      .then(() => this.router.navigate(['/dashboard']))
-      .catch((e) => console.log(e.message));
+  async login(loginData: LoginData) {
+    // await this.authService.login(loginData);
+    // const { getFirestore } = await import('../../../dashboard/firestore_operations');
+    // getFirestore();
+    this.router.navigate(['/dashboard']);
   }
 
   loginWithGoogle() {
